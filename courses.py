@@ -12,6 +12,23 @@ def grade_scale(self) :
     return total_score(self.course_units , self.grade_score) 
 
 def grade(self) : 
-    """returns the equivaelent letter scale based on score"""
+    """returns the equivalent letter scale based on score"""   
     return grade_point(self.grade_score) 
 
+def gpa(courses : list ) : 
+    """returns the student's gpa for the semester 
+    Args : collect input of courses from user in form of a list 
+    
+    Return : semester grade point average 
+
+    Raises ; valueError if the total units == 0
+    """
+    total_units = 0 
+    for i in courses : 
+        total_units += i 
+    
+    if total_units == 0 : 
+        raise ValueError ("Your total units must be greater than 0")
+    
+    total_grade_point = 
+    
